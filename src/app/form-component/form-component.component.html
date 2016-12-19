@@ -1,0 +1,14 @@
+<div class="jumbotron">
+<div class="panel panel-default formSpace">
+<div class="panel-header"> Demo Form Submit </div>
+<div class="panel-body">
+<form #f="ngForm"
+      (ngSubmit)="onSubmit(f.value)" class="form-group">
+      <label for="exampleInput"> Enter any SKU </label>
+      <input type="text" class="form-control" placeholder="SKU" id="exampleInput" name="sku" ngModel>
+      <br>
+      <button class="btn btn-default" type="submit"> Submit </button>
+</form>      
+</div>
+</div>
+</div>
